@@ -13,8 +13,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "0827IT211133",
-  description: "Made by Vishal Jadoun",
+  title: "Devops Project 2024",
+  description: "Made by Aditya, Ritik, Manish & Jagraj",
 };
 
 export default function RootLayout({ children }) {
