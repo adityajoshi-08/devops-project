@@ -1,9 +1,10 @@
 export default function InputForm({ jsonInput, setJsonInput, onSubmit }) {
+  const data = ["A", 1, "Z"];
   return (
     <div className="mb-5">
       <label className="block mb-2 text-lg font-medium">API Input</label>
       <textarea
-        className="w-full p-2 border rounded"
+        className="w-full p-2 border rounded text-black"
         rows="4"
         placeholder='Enter JSON like 
         { "data": ["A", "1", "z"] } or 
@@ -16,6 +17,8 @@ export default function InputForm({ jsonInput, setJsonInput, onSubmit }) {
         value={jsonInput}
         onChange={(e) => setJsonInput(e.target.value)}
       />
+      <span>Sample text </span>
+      <h1>{JSON.stringify({data})}</h1>
       <button
         className="mt-3 bg-blue-600 text-white py-2 px-4 rounded"
         onClick={onSubmit}
